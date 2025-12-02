@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>K-Pop Group Picker</title>
+
+<script>
+function pickGroup() {
+    const groups = [
+        "BTS",
+        "Stray Kids",
+        "AMPERS&ONE",
+        "Boynextdoor",
+        "ILLIT",
+        "Le Sserafim",
+        "P1Harmony",
+        "KickFlip",
+        "NCT127",
+        "Aespa",
+        "Blackpink",
+        "Seventeen",
+        "TXT",
+        "Enhypen",
+        "ATEEZ",
+        "Twice",
+        "Red Velvet",
+        "NewJeans",
+        "IVE",
+		"NEWBEAT",
+		"82MAJOR",
+		"WayV",
+		"N.Ssign",
+		"NOWZ",
+		"EVERGLOW",
+		"XG",
+		"Kep1er",
+		"NMIXX",
+		"Dreamcatcher",
+		"STAYC",
+		"I-DLE",
+		"The Boyz",
+		"CIX",
+		"Pentagon",
+		"Day6",
+		"Am8ic",
+		"WHIB",
+		"M.O.N.T.",
+        "ITZY",
+        "Treasure",
+        "ZEROBASEONE"
+    ];
+
+    const randomGroup = groups[Math.floor(Math.random() * groups.length)];
+
+    document.getElementById("result").innerHTML = randomGroup;
+}
+</script>
+
+</head>
+<body>
+
+<h2>Random K-Pop Group Generator</h2>
+
+<p id="result">Click the button to get a group!</p>
+
+<button type="button" onclick="pickGroup()">Pick a Group</button>
+
+</body>
+</html>
